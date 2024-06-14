@@ -2,6 +2,8 @@
 
 This repository contains a Django project developed during the "Django: Create Applications in Python" training on Alura. The project is a website called Alura Space, designed to showcase space images such as photographs of galaxies and nebulae. Users can create accounts, upload, and delete images. The CRUD operations can be performed either through the provided templates or the Django admin interface.
 
+This project was developed by the student during the "Django: Create Applications in Python" training, which can be accessed at [Alura](https://cursos.alura.com.br/formacao-django).
+
 ## Project Overview
 Django is a high-level Python web framework that enables the rapid development of secure and easy-to-maintain websites. Built by experienced developers, Django handles much of the web development workload, allowing you to focus on writing your application without reinventing the wheel. It is free, open-source, and boasts an active community, excellent documentation, and various support options.
 
@@ -74,6 +76,7 @@ django-create-applications-python/
    pip install -r requirements.txt
    ```
 6. Set up the environment variables by creating a `.env` file in the project root and adding the necessary variables.
+
 7. Apply migrations to set up the database:
    ```sh
    python manage.py migrate
@@ -89,7 +92,5 @@ django-create-applications-python/
 
 ## Learn More
 To learn more about Django and how to develop web applications with Python, visit the [Django documentation](https://docs.djangoproject.com/).
-
-This project was developed by the student during the "Django: Create Applications in Python" training, which can be accessed at [Alura](https://cursos.alura.com.br/formacao-django).
 
 Feel free to explore, modify, and use this project as a foundation for your own Django applications!
