@@ -1,36 +1,33 @@
-# Django: Create Applications in Python
+# Django: Creating Web Applications in Python
 
-This repository contains a Django project developed during the "Django: Create Applications in Python" training on Alura. The project is a website called Alura Space, designed to showcase space images such as photographs of galaxies and nebulae. Users can create accounts, upload, and delete images. The CRUD operations can be performed either through the provided templates or the Django admin interface.
-
-This project was developed by the student during the "Django: Create Applications in Python" training, which can be accessed at [Alura](https://cursos.alura.com.br/formacao-django).
+This repository contains a Django project developed during the "Django: Creating Applications in Python" training at Alura. Throughout the course, which involves multiple modules, a site is built using best programming practices. The project is a website called Space, designed to display space images such as photographs of galaxies and nebulas. Users can create accounts, upload, and delete images. CRUD operations can be performed through the provided models or the Django admin interface.
 
 ## Project Overview
-Django is a high-level Python web framework that enables the rapid development of secure and easy-to-maintain websites. Built by experienced developers, Django handles much of the web development workload, allowing you to focus on writing your application without reinventing the wheel. It is free, open-source, and boasts an active community, excellent documentation, and various support options.
 
-In this training, you will learn:
-- How to use Django templates and best programming practices.
-- How to work with databases and create forms using Django's native tools.
-- How to create user registrations and implement authentication mechanisms.
-- How to create a photograph management system (CRUD) and use services like AWS S3 for cloud image storage.
+Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django handles much of the web development workload, allowing you to focus on writing your application without reinventing the wheel. It is free and open-source, has an active community, excellent documentation, and many support options.
 
-## Technologies Used
-- Python 3.11.4
-- Django 4.1
-- Additional libraries (listed in `requirements.txt`)
+### Learning Objectives
+- Understand how Django works in a practical way
+- Learn how templates and page rendering work in Django
+- Maintain good programming practices in Django projects
+- Create your own web applications using Python
+- Manage data in a Django application using databases
+- Get familiar with Django Admin, a native administrative route of the framework
+- Create forms with Django's native tools
+- Handle media files in Django
+- Utilize Django's internal modules for form creation
+- Access Django's internal database
+- Validate form data
+- Create dynamic alert messages
+- Structure partials to avoid code duplication
+- Advance your knowledge of the MTV (Model-Template-View) architecture
+- Refactor and organize a Django project
+- Get to know AWS S3
+- Persist photographs in an S3 Bucket
 
-## Environment Variables
-Create a `.env` file in the root directory of the project and define the following variables:
-```
-SECRET_KEY=your_secret_key
-AWS_ACCESS_KEY_ID=your_aws_access_key_id
-AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-AWS_STORAGE_BUCKET_NAME=your_aws_storage_bucket_name
-```
-
-Replace `your_secret_key`, `your_aws_access_key_id`, `your_aws_secret_access_key`, and `your_aws_storage_bucket_name` with your actual values.
+This project is part of the "Django: Create Applications in Python" course at Alura, available at [Alura Django Course](https://cursos.alura.com.br/formacao-django).
 
 ## Project Structure
-The directory structure of the project is as follows:
 ```
 django-create-applications-python/
 ├── .env
@@ -49,48 +46,58 @@ django-create-applications-python/
 └── README.md
 ```
 
-## How to Run the Project
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/goosekiing/django-create-applications-python.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd django-create-applications-python
-   ```
-3. Create a virtual environment:
-   ```sh
-   python -m venv venv
-   ```
-4. Activate the virtual environment:
-   - On macOS/Linux:
-     ```sh
-     source venv/bin/activate
-     ```
-   - On Windows:
-     ```sh
-     venv\Scripts\activate
-     ```
-5. Install the dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-6. Set up the environment variables by creating a `.env` file in the project root and adding the necessary variables.
+## Setup Instructions
 
-7. Apply migrations to set up the database:
-   ```sh
-   python manage.py migrate
-   ```
-8. Create a superuser to access the Django admin:
-   ```sh
-   python manage.py createsuperuser
-   ```
-9. Run the Django development server:
-   ```sh
-   python manage.py runserver
-   ```
+### Prerequisites
+- Python 3.11.4
+- Virtual environment
+- Django 4.1
 
-## Learn More
-To learn more about Django and how to develop web applications with Python, visit the [Django documentation](https://docs.djangoproject.com/).
+### Steps to Run the Project
 
-Feel free to explore, modify, and use this project as a foundation for your own Django applications!
+1. **Clone the repository**
+    ```sh
+    git clone https://github.com/goosekiing/django-create-applications-python.git
+    cd django-create-applications-python
+    ```
+
+2. **Create and activate a virtual environment**
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3. **Install the requirements**
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Set up the environment variables**
+    - Create a `.env` file in the root directory with the following variables:
+      ```env
+      SECRET_KEY=your_secret_key
+      AWS_ACCESS_KEY_ID=your_aws_access_key_id
+      AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+      AWS_STORAGE_BUCKET_NAME=your_aws_bucket_name
+      ```
+
+5. **Apply migrations**
+    ```sh
+    python manage.py migrate
+    ```
+
+6. **Create a superuser**
+    ```sh
+    python manage.py createsuperuser
+    ```
+
+7. **Run the development server**
+    ```sh
+    python manage.py runserver
+    ```
+
+## Language
+The language used in this project is Brazilian Portuguese (pt-br).
+
+## Author
+GitHub Username: [goosekiing](https://github.com/goosekiing)

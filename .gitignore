@@ -169,6 +169,7 @@ cython_debug/
 
 # Others:
 passo-a-passo-venv-e-django.txt
+readme-generator.txt
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
